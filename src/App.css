@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+  transition: 0.5s ease-in-out;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header,
+.input-form,
+.display-form {
+  background-color: #282c34;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #50c878;
+}
+
+input[type="text"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+input[type="submit"] {
+  padding: 0.8rem;
+  background-color: #282c34;
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.input-form {
+  justify-content: space-evenly;
+}
+
+.display-form {
+  display: flex;
+  color: #282c34;
+}
+
+.display-form p {
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #50c878;
+}
+
+.display-form p span {
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 575px) {
+  section {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App,
+  form,
+  input,
+  label,
+  .display-form p,
+  .display-form p span {
+    font-size: 90%;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
